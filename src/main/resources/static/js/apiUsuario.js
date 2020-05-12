@@ -48,6 +48,11 @@ apiUsuario = (function(){
 	                alert("El Usuario no encontrado"); 
 	            }
 			})
+		},
+		salir: function(){
+			alert("Cerro Sesión correctamente");
+			location.href = "/index.html";
+			sessionStorage.setItem("usuario", "");
 		}
 		
 	}
