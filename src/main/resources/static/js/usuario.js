@@ -32,7 +32,6 @@ var usuario = (function() {
 	}
 
 	var listaCanciones = function(nombre) {
-		alert("entro abuscar la lista");
 		apiUsuario.ListaCanciones(sessionStorage.getItem('usuario'), nombre,
 				mostrarCanciones);
 	};
