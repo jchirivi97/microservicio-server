@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Musica</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--JQUERY-->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<!-- Los iconos tipo Solid de Fontawesome-->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" />
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<!-- DATA TABLE -->
+<script
+	src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script
+	src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+<link rel="stylesheet"
+	href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
+
+<link rel="stylesheet" type="text/css" href="/css/principal.css" />
+
+<script src="js/apiUsuario.js"></script>
+<script src="js/usuario.js"></script>
+
+</head>
+<body onload="usuario.listas()">
+
+
+	<div class="card"
+		style="position: relative; margin: 80px 0 0 200px; width: 30rem;">
+		<div class="card-body">
+			<center>
+				<h5 class="card-title">Tu lista de reproducción</h5>
+				<p class="card-text">Escoge tu lista de reproducción</p>
+				<div class="col-lg-9">
+					<select class="form-control" id="listas">
+					</select>
+			</center>
+		</div>
+		<br></br>
+		<center>
+			<button type="button" class="btn btn-success"
+				onclick="usuario.vercanciones()">Ver Lista</button>
+		</center>
+	</div>
+	</div>
+
+
+	<table class="table table-striped table-dark" id="table"
+		style="margin: 70px 0 0 200px; width: 30rem;">
+
+		<thead>
+
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+</body>
+</html>
